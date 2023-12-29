@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/zentrades_vjti_assignment_task3/static/css/main.735effaf.css",
-    "main.js": "/zentrades_vjti_assignment_task3/static/js/main.54845628.js",
+    "main.css": "/zentrades_vjti_assignment_task3/static/css/main.d6fb4178.css",
+    "main.js": "/zentrades_vjti_assignment_task3/static/js/main.1b9dabb6.js",
     "static/js/787.33d521d5.chunk.js": "/zentrades_vjti_assignment_task3/static/js/787.33d521d5.chunk.js",
+    "static/media/1.png": "/zentrades_vjti_assignment_task3/static/media/1.d1b38363d9406009bc3b.png",
     "index.html": "/zentrades_vjti_assignment_task3/index.html",
-    "main.735effaf.css.map": "/zentrades_vjti_assignment_task3/static/css/main.735effaf.css.map",
-    "main.54845628.js.map": "/zentrades_vjti_assignment_task3/static/js/main.54845628.js.map",
+    "main.d6fb4178.css.map": "/zentrades_vjti_assignment_task3/static/css/main.d6fb4178.css.map",
+    "main.1b9dabb6.js.map": "/zentrades_vjti_assignment_task3/static/js/main.1b9dabb6.js.map",
     "787.33d521d5.chunk.js.map": "/zentrades_vjti_assignment_task3/static/js/787.33d521d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.735effaf.css",
-    "static/js/main.54845628.js"
+    "static/css/main.d6fb4178.css",
+    "static/js/main.1b9dabb6.js"
   ]
 }
