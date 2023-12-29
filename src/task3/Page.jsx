@@ -6,7 +6,8 @@ const LoginDashboard = () => {
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
-  const handleLogin = () => {
+  const handleLogin = (e) => {
+    e.preventDefault()
     if (
       !username.includes("@") ||
       !/\d/.test(password) ||
@@ -19,30 +20,55 @@ const LoginDashboard = () => {
     }
   };
 
+  const handleForgotPassword = () => {
+    // Open the user's default email client for password reset
+    window.location.href =
+      "mailto:support@smartserv.io?subject=Password Reset Request";
+  };
+
   return (
-    <div className="login-container">
-      <div className="login-box">
-        <div className="logo">Logo</div>
-        <div className="form-container">
-          <h2>Login</h2>
-          <input
+    <div className="wrapper">
+    <div className='inner-wrapper'>
+    <form className="form-signin">
+        <div className='image'></div>
+        <input
             type="text"
-            placeholder="Username (email format)"
+            className="form-control"
+            name="username"
+            placeholder="Username"
+            required
+            autoFocus
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-          />
-          <input
+        />
+        <input
             type="password"
-            placeholder="Password (no special characters, @ required, uppercase and number)"
+            className="form-control"
+            name="password"
+            placeholder="Password"
+            required
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-          />
-          <button onClick={handleLogin}>Login</button>
-          {errorMessage && <p className="error-message">{errorMessage}</p>}
-          <a href="#">Forgot Password?</a>
+        />
+        
+        <button 
+            className="btn"
+            type="submit"
+            onClick={handleLogin}
+        >
+            Login
+        </button>
+        {errorMessage && <p className="error-message">{errorMessage}</p>}
+        <br></br>
+        <div className='forgetpassword'>
+        <a href="#" onClick={handleForgotPassword}>
+            Forgot Password?
+           
+        </a>
         </div>
-      </div>
+    </form>
     </div>
+</div>
   );
 };
 

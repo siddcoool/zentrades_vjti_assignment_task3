@@ -1,78 +1,83 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Grey background outside the container */
+  background: #2e2e2e !important;
+}
+
+.wrapper {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+
+  .form-signin-heading,
+  .checkbox {
+    margin-bottom: 30px;
   }
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  .error-message{
+    color: white;
   }
-  
-  .card {
-    background-color: #000;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Minor shadow */
-    padding: 20px;
+
+  .checkbox {
+    font-weight: normal;
   }
-  
-  .logo img {
-    max-width: 100px;
-  }
-  
-  .login-container {
-    background-color: #0f9d58;
-    padding: 20px;
-    border-radius: 5px;
-    border: 2px solid #000;
-    text-align: center;
-  }
-  
-  h2 {
-    margin-bottom: 20px;
-  }
-  
-  .input-container {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column; /* Align items column-wise */
-  }
-  
-  input {
-    width: calc(100% - 22px); /* Adjust width to account for padding and border */
+
+  .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #000;
-    margin-bottom: 5px; /* Spacing between inputs */
+    width: 350px;
+    @include box-sizing(border-box);
+
+    &:focus {
+      z-index: 2;
+    }
   }
-  
-  .error {
-    color: red;
-    display: block;
-    margin-top: 5px;
-    font-size: 14px;
-  }
-  
-  button {
-    background-color: #0f9d58; /* Green button */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+  .forgetpassword {
     margin-top: 10px;
+    text-align: center; /* Center the text */
   }
-  
-  button:hover {
-    background-color: #0c7b44; /* Darker green on hover */
+
+  input[type="text"] {
+    margin-bottom: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
-  
-  .forgot-password {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    margin-top: 10px;
+
+  input[type="password"] {
+    margin-bottom: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
-  
+
+  .btn {
+    width: 380px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: #38ab5f;
+    background-color: #38ab5f;
+    color: white;
+  }
+}
+
+.inner-wrapper{
+  background-color: #2e2e2e;
+  height: 600px;
+}
+
+
+.image{
+  height: 150px;
+  width: 300px;
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-image: url(./1.png);
+}
